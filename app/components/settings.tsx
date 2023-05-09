@@ -239,7 +239,7 @@ export function Settings() {
   }
 
   const accessStore = useAccessStore();
-  const enabledAccessControl = useMemo(
+  const enabledAccessControl = ture(
     () => accessStore.enabledAccessControl(),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [],
